@@ -1,0 +1,13 @@
+*/bin/
+.metadata
+.metadata/*
+*/.metadata/*
+*.log
+bin/
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Locally stored "Eclipse launch configurations"
+*.launch
