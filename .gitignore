@@ -8,6 +8,9 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+RemoteSystemsTempFiles/
+*.project
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
