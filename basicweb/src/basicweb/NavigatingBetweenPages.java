@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigatingBetweenPAges {
+public class NavigatingBetweenPages {
 	private WebDriver driver;
 	private String baseUrl;
 

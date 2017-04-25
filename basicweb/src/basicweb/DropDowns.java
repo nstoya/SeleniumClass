@@ -1,5 +1,6 @@
 package basicweb;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -26,28 +27,33 @@ public class DropDowns {
 		
 	}
 
-//	@Test
-//	public void testDropdown() throws InterruptedException {
-//		driver.get(baseURL1);
-//		
-//		driver.findElement(By.id("tab-flight-tab-hp")).click();
-//		
-//		Select adults = new Select(driver.findElement(By.id("flight-adults-hp-flight")));
-//		Select children = new Select(driver.findElement(By.id("flight-children-hp-flight")));
-//		
-//		List<WebElement> adultOptions = adults.getOptions();
-//
-//		
-//		for (WebElement elem: adultOptions){
-//			System.out.println("Adults Option: " + elem.getText());
-//		}
-//		
-//		//by value
-//		adults.selectByValue("3");
-//		
-//		//by index
-//		children.selectByIndex(3);
-//	}
+	@Test
+	public void testDropdown() throws InterruptedException {
+		driver.get(baseURL1);
+		
+		driver.findElement(By.id("tab-flight-tab-hp")).click();
+		
+		Select adults = new Select(driver.findElement(By.id("flight-adults-hp-flight")));
+		Select children = new Select(driver.findElement(By.id("flight-children-hp-flight")));
+		
+		List<WebElement> adultOptions = adults.getOptions();
+
+		System.out.println("Print adults options");
+		for (WebElement elem: adultOptions){
+			System.out.println("Adults Option: " + elem.getText());
+		}
+		
+		//by value
+		adults.selectByValue("3");
+		
+		//by index
+		children.selectByIndex(3);
+		
+		//by visibleText
+		children.selectByVisibleText("3");
+		
+		
+	}
 	
 	@Test
 	public void testMultiSelect() throws InterruptedException{
