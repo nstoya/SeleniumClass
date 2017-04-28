@@ -24,20 +24,20 @@ public class CalendarDemo {
 		
 	}
 
-	//@Test
-	public void test1() {
-		driver.get(baseURL);
-		
-		//click on Departing field
-		WebElement departField = driver.findElement(By.id("package-departing-hp-package"));
-		departField.click();
-		
-		
-		//select a Date
-		WebElement dateToSelect = driver.findElement(By.xpath("//div[@class='datepicker-cal-month'][1]/table//button[text()='29']"));
-		
-		dateToSelect.click();
-	}
+//	@Test
+//	public void test1() {
+//		driver.get(baseURL);
+//		
+//		//click on Departing field
+//		WebElement departField = driver.findElement(By.id("package-departing-hp-package"));
+//		departField.click();
+//		
+//		
+//		//select a Date
+//		WebElement dateToSelect = driver.findElement(By.xpath("//div[@class='datepicker-cal-month'][1]/table//button[text()='29']"));
+//		
+//		dateToSelect.click();
+//	}
 	
 	@Test
 	public void test2() {
