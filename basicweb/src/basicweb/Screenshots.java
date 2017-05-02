@@ -50,10 +50,6 @@ public class Screenshots {
 		searchButton.click();
 	}
 	
-	public static String getRandomString (int length){
-		return "";
-	}
-	
 	@After
 	public void tearDown() throws Exception {
 		String filename = new Random().nextInt(100000000) + ".png";
