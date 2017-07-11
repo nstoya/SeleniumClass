@@ -8,6 +8,8 @@ public class LoggingFile {
 	private static final Logger log = LogManager.getLogger(LoggingFile.class.getName());
 	
 	public static void main(String[] args) {
+		log.info("Info Message Logged");
+		log.trace("Trace Message Logged");
 		log.debug("Debug Message Logged");
 		log.error("Error message logged");
 		log.fatal("Fatal");
