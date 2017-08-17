@@ -14,3 +14,4 @@ RemoteSystemsTempFiles/
 # Locally stored "Eclipse launch configurations"
 *.launch
 
+*/test-output/
